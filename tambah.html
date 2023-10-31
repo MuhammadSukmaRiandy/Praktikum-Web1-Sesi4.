@@ -18,17 +18,22 @@
         <div class="row mt-2">
             <h5>Tambah Karyawan</h5>
             <form action="">
-                    <label for="nik">NIK :</label><br>
-                    <input type="text" name="nik" id="nik" size="10" maxlength="10" required placeholder="misal: 123"><br>
-
-                    <label for="nama">Nama :</label><br>
-                    <input type="text" name="nama" id="nama" required placeholder="misal: fulan"><br>
-                    
-                    <label for="tanggal_mulai">Tanggal Mulai :</label><br>
-                    <input type="date" name="tanggal_mulai" id="tanggal_mulai" required min="2022-01-11"><br>
-            
-                    <label for="gaji_pokok">Gaji Pokok :</label><br>
-                    <input type="number" name="gaji_pokok" id="gaji_pokok" required min="1000000" step="1000"><br>
+                    <div class="mb-3">
+                        <label for="nik" class="form-label">NIK :</label><br>
+                        <input type="text" class="form-control" name="nik" id="nik" size="10" maxlength="10" required placeholder="misal: 123"><br>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama :</label><br>
+                        <input type="text" class="form-control" name="nama" id="nama" required placeholder="misal: fulan"><br>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tanggal_mulai" class="form-label">Tanggal Mulai :</label><br>
+                        <input type="date" class="form-control" name="tanggal_mulai" id="tanggal_mulai" required min="2022-01-11"><br>
+                    </div>
+                    <div class="mb-3">
+                        <label for="gaji_pokok" class="form-label">Gaji Pokok :</label><br>
+                        <input type="number" class="form-control" name="gaji_pokok" id="gaji_pokok" required min="1000000" step="1000"><br>
+                    </div>
 
                     <label for="status">Status Karyawan :</label><br>
                     <input type="radio" name="status_karyawan" id="tetap" value="TETAP" required>
