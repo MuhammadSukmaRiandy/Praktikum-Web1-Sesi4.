@@ -34,17 +34,33 @@
                         <label for="gaji_pokok" class="form-label">Gaji Pokok :</label><br>
                         <input type="number" class="form-control" name="gaji_pokok" id="gaji_pokok" required min="1000000" step="1000"><br>
                     </div>
-
-                    <label for="status">Status Karyawan :</label><br>
-                    <input type="radio" name="status_karyawan" id="tetap" value="TETAP" required>
-                    <label for="tetap">TETAP</label><br>
-                    <input type="radio" name="status_karyawan" id="kontrak" value="KONTRAK">
-                    <label for="kontrak">KONTRAK</label><br>
-                    <input type="radio" name="status_karyawan" id="magang" value="MAGANG">
-                    <label for="magang">MAGANG</label><br>
-
-                    <input type="submit" id="btn_submit" name="btn_submit" value="Submit">
-                    <input type="reset" id="btn_reset" name="btn_reset" value="Reset">
+                    <label for="status_karyawan" class="form-label">Status Karyawan :</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="status_karyawan" id="tetap" value="TETAP" checked>
+                        <label class="form-check-label" for="tetap">
+                            TETAP
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="status_karyawan" id="kontrak" value="KONTRAK">
+                        <label class="form-check-label" for="kontrak">
+                            KONTRAK
+                        </label>   
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="status_karyawan" id="magang" value="MAGANG">
+                        <label class="form-check-label" for="magang">
+                            MAGANG
+                        </label>
+                    </div>
+                </div>
+                    <br>
+                    <button type="submit" class="btn btn-success" id="btn_submit" name="btn_submit" value="Submit">
+                        <i class="fa fa-save"></i> Submit
+                    </button>
+                    <button type="reset" class="btn btn-primary" id="btn_reset" name="btn_reset" value="Reset">
+                        <i class="fa fa-arrows-rotate"></i> Reset
+                    </button>
             </form>
         </div>
     </div>
